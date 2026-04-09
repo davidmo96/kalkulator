@@ -18,14 +18,16 @@ function drawButtons(){
 
         let valStart =  Object.values(calcButtons.calcNumbers);
         let valCalc = Object.values(calcButtons.calcFunctions);
-        let val = 0
-        let val2 = 0;     
+        let valExtra = Object.values(calcButtons.calcExtras);
+        let val = 0;
+        let val2 = 0;    
+        let val3 = 0; 
 
         Object.values(calcButtons.calcNumbers).forEach(noe => { 
             valNext = valStart.at(val);
             console.log(valNext);
             const calcButton = document.createElement("button");
-            calcButton.setAttribute("onclick", "calculateNumber(this.innerHTML)");
+            calcButton.setAttribute("onclick", "calculateNumber(this.innerHTML)",);
             calcButton.innerHTML = valNext;
             buttonPrint.appendChild(calcButton);  
             val += 1;
@@ -39,6 +41,19 @@ function drawButtons(){
             calcButton.innerHTML = valFunction;
             buttonPrint.appendChild(calcButton);  
             val2 += 1;
+        }); 
+
+        Object.values(calcButtons.calcExtras).forEach(noe => { 
+            valExtras = valExtra.at(val3).visual;
+            valExtraFunction = valExtra.at(val3).function;
+            console.log(valExtras);
+            console.log(valExtraFunction);
+            const calcButton = document.createElement("button");
+            calcButton.setAttribute("onclick", "extraPick(this.value)");
+            calcButton.innerHTML = valExtras;
+            calcButton.value = valExtraFunction;
+            buttonPrint.appendChild(calcButton);  
+            val3 += 1;
         }); 
     
     }
