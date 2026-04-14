@@ -36,28 +36,38 @@ const calcButtons = {
             calcButtonSubtract:"-",
     },
     calcExtras: {
+            calcButtonC: {
+                visual: "C",
+                function: "C",
+            } ,
+            calcButtonBack:{
+                visual: "←",
+                function: "←",
+            } , 
             calcButtonSQRoot:{
-            visual:"√",
-            function: "Math.sqrt(calcNumber.firstNum)"
-
-        },
+                visual:"√",
+                function: "Math.sqrt(calcNumber.firstNum)"
+             },
             calcButtonPercentage:{
-            visual:"%",
-            function: null ,
-        },
-            calcButtonFlip: "±",
-            calcButtonEquals: "=",
+                visual:"%",
+                function: "Number(calcNumber.firstNum/calcNumber.secondNum)*100" ,
+             },
+            calcButtonFlip:{
+                visual:"±",
+                function:"±",
+            }  , 
             calcButtonSQ:{
-            visual:"×²",
-            function: "calcNumber.firstNum*calcNumber.firstNum",
-        },
+                visual:"×²",
+                function: "calcNumber.firstNum*calcNumber.firstNum",
+             },
             calcButtonDividebyX:{
-            visual:"¹∕×",
-            function: "(Number(calcNumber.firstNum + 1/(calcNumber.secondNum))",
-        }, 
-            calcButtonCE: "CE", 
-            calcButtonC: "C",
-            calcButtonBack: "←",
+                visual:"¹∕×",
+                function: ["Number(1/(calcNumber.firstNum))","Number(Number(calcNumber.firstNum) + 1/(calcNumber.secondNum))",],
+             }, 
+             calcButtonEquals:{
+                visual:"=",
+                function:"=",
+            } ,
         },
 
 }

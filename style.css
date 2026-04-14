@@ -1,0 +1,117 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 120px;
+    
+}
+
+#screen{
+    height: 20px;
+}
+
+button {
+    width: 30px;
+    height: 25px;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 120px;
+}
+
+.btnxtra7{
+    align-self: flex-end;
+    order: 23;
+}
+.btn10{
+    align-self: flex-end;
+    order: 22;
+}
+
+.btn0{
+    align-self: flex-end;
+    order: 22;
+}
+.btnxtra4{
+    align-self: flex-end;
+    order: 21;
+}
+.btnfnc2{
+    align-self: flex-end;
+    order: 20;
+}
+.btn3{
+    align-self: flex-start;
+    order: 19;
+}
+.btn2{
+    align-self: flex-start;
+    order: 18;
+}
+.btn1{
+    align-self: flex-start;
+    order: 17;
+}
+.btnfnc3{
+    align-self: flex-end;
+    order: 16;
+}
+.btn6{
+    align-self: flex-start;
+    order: 16;
+}
+.btn5{
+    align-self: flex-start;
+    order: 15;
+}
+.btn4{
+    align-self: flex-start;
+    order: 14;
+}
+.btnfnc1{
+    align-self: flex-start;
+    order: 13;
+}
+.btn9{
+    align-self: flex-start;
+    order: 12;
+}
+.btn8{
+    align-self: flex-start;
+    order: 11;
+}
+
+.btn7{
+    align-self: flex-start;
+    order: 10;
+}
+.btnfnc0{
+    align-self: flex-start;
+    order: 9;
+}
+.btnxtra2{
+    align-self: flex-start;
+    order: 8;
+}
+.btnxtra1{
+    width:60px;
+    order: -3;
+}
+.btnxtra0{
+    order:-2;
+}
+.btnxtra3{
+    order: -1;
+}
+
+
+
+
+
+
+
+
